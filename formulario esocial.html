@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Athena Ozanich's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Online registration form, HTML, CSS, Mobile First">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+  <body>
+
+    <!--Header section-->
+
+    <header>
+      <h1>Regularização de dados e-Social GOIASPREV</h1>
+    </header>
+
+    <main>
+
+
+      <!--Main body of form-->
+      <form class="gform" action="https://script.google.com/macros/s/AKfycbzVXiKwtEi89ZtOC0Ez_UiPmzDeLlYLqetn4EiDJWHjhXs25Kw/exec" method="POST">
+        <!--Contact section of the form-->
+      <div class="form-elements">
+        <fieldset>
+          <legend><h2>Informações de contato</h2></legend>
+
+          <label for="name">Nome Completo</label>
+          <input id="name" aria-label="name" type="text" name="name" placeholder="O campo é obrigatório" required>
+
+          <label for="email">E-mail</label>
+          <input id="email" aria-label="email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="O campo é obrigatório" required>
+
+          <label for="phone-number">Telefone</label>
+          <input id="phone-number" aria-label="phone-number" type="tel" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="xx-9xxxx-xxxx" placeholder="(xx)9xxxx-xxxx">
+
+          <label for="address">Endereço</label>
+          <input id="address" aria-label="address" type="text" name="address" placeholder="O campo é obrigatório">
+
+          <label for="Cidade">City</label>
+          <input id="city" aria-label="city" type="text" name="city" placeholder="O campo é obrigatório">
+
+          <!--Select and its corresponding options and label-->
+
+          <label for="Estado">Estado</label>
+          <select id="Estado" aria-label="Estado" name="Estado">
+            <option value="" disabled selected >Escolha seu Estado</option>
+            <option>Goiânia</option>
+            <option>Brasilia</option>
+            <option>Maranhão</option>
+            <option>Piaui</option>
+          </select>
+
+          <label for="CEP">CEP</label>
+          <input id="CEP" aria-label="CEP" type="text" name="CEP" placeholder="xxxxxx-xx">
+        </fieldset>
+
+
+      <!--Newsletter section of the form.-->
+
+
+        <fieldset id="Informações para o e-Social">
+          <legend><h2>Informações para o e-Social</h2></legend>
+          <p>Selecione abaixo o campo em que melhor representa sua situação.</p>
+
+          <!--Checkboxes-->
+
+          <input id="html" aria-label="html" type="checkbox" name="html">
+          <label for="html">Aposentado?</label>
+
+          <input id="css" aria-label="css" type="checkbox" name="css">
+          <label for="css">Pensionista?</label>
+
+          <input id="jscript" aria-label="jscript" type="checkbox" name="javascript">
+          <label for="jscript">Aposentado e Pensionista?</label>
+
+          <p>Já realizou seu recadastramento este ano?</p>
+
+          <!--Radio buttons-->
+
+          <input id="html-format" aria-label="html-format" type="radio" name="format-choice" value="html">
+          <label for="html-format">Sim</label>
+
+          <input id="plain-text" aria-label="plain-text" type="radio" name="format-choice" value="plain-text">
+          <label for="plain-text">Não</label>
+
+          <p>Informe Seus Dados como CNIS, CPF e Grau de Escolaridade.</p>
+
+          <!--Textarea and label-->
+
+          <label for="message"></label>
+          <textarea id="message" aria-label="message" name="message" placeholder="O campo é obrigatório"></textarea>
+        </fieldset>
+        <button type="submit">Enviar</button>
+      </div class="form-elements">
+      </form>
+
+      <!--End form-->
+
+    </main>
+
+   
+
+</html>
